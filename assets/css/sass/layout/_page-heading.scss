@@ -1,0 +1,15 @@
+.page-header {
+    background-image: url("../images/page-heading-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 200px 0 100px;
+    border-bottom-left-radius: 125px;
+    border-bottom-right-radius: 125px;
+    a {
+        color: var(--c-white-main);
+        @include prefixer(transition, var(--time-transition));
+        &:hover {
+            color: var(--c-red-main);
+        }
+    }
+}

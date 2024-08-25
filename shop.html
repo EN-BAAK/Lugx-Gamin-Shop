@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Shop</title>
+        <!-- Render All Elements Noramlly -->
+        <link rel="stylesheet" href="./assets/css/normalize.css" />
+        <!-- Font Awesome Library -->
+        <link rel="stylesheet" href="./vendor/icons/CSS/all.min.css" />
+        <!-- Bootstrap Framework -->
+        <link
+            rel="stylesheet"
+            href="./vendor/bootstrap/CSS/bootstrap.min.css"
+        />
+        <!-- Main Template Css File -->
+        <link rel="stylesheet" href="./assets/css/avatar.css" />
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <!-- Start Loading -->
+        <div id="js-preloader" class="js-preloader">
+            <div class="preloader-inner">
+                <span class="dot"></span>
+                <div class="dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <!-- End Loading -->
+        <!-- Start Header -->
+        <header class="position-fixed pt-3 w-100" scrolled="false">
+            <div
+                class="container d-flex align-items-center justify-content-between p-md-2"
+            >
+                <a class="logo" href="#">
+                    <img src="./assets/images/logo.png" alt="logo" />
+                </a>
+                <nav>
+                    <ul class="head-navbar p-0 overflow-hidden">
+                        <li class="p-2 d-lg-flex align-items-center">
+                            <a
+                                class="p-1 pe-3 ps-3 rounded-pill"
+                                href="./inedx.html"
+                                >Home</a
+                            >
+                        </li>
+                        <li class="active p-2 d-lg-flex align-items-center">
+                            <a
+                                class="p-1 pe-3 ps-3 rounded-pill"
+                                href="./shop.html"
+                                >Our Shop</a
+                            >
+                        </li>
+                        <li class="p-2 d-lg-flex align-items-center">
+                            <a
+                                class="p-1 pe-3 ps-3 rounded-pill"
+                                href="./product-details.html"
+                                >Product Details</a
+                            >
+                        </li>
+                        <li class="p-2 d-lg-flex align-items-center">
+                            <a
+                                class="p-1 pe-3 ps-3 rounded-pill"
+                                href="./contact.html"
+                                >Contact Us</a
+                            >
+                        </li>
+                        <button class="ps-4 pe-4">
+                            <a class="text-white" href="#">Sign In</a>
+                        </button>
+                    </ul>
+                </nav>
+                <div class="triggle-bar">
+                    <div class="bar bar-top"></div>
+                    <div class="bar bar-mid"></div>
+                    <div class="bar bar-bottom"></div>
+                </div>
+            </div>
+        </header>
+        <!-- End Header -->
+        <!-- Start Page Header -->
+        <div class="page-header">
+            <div class="container text-center">
+                <h1 class="text-white text-uppercase mt-0 mb-3 fw-bold fa-3x">
+                    Our shop
+                </h1>
+                <div class="text-white">
+                    <a href="#">Home</a> > <a href="#">Our shop</a>
+                </div>
+            </div>
+        </div>
+        <!-- End Page Header -->
+        <div class="trending-shop trending">
+            <div class="container">
+                <ul class="choice mb-5 d-flex justify-content-center p-0">
+                    <li
+                        cate="all"
+                        class="me-3 rounded-pill text-uppercase active"
+                    >
+                        Show All
+                    </li>
+                    <li cate="adv" class="me-3 rounded-pill text-uppercase">
+                        Adventure
+                    </li>
+                    <li cate="str" class="me-3 rounded-pill text-uppercase">
+                        Strategy
+                    </li>
+                    <li cate="rac" class="rounded-pill text-uppercase">
+                        Racing
+                    </li>
+                </ul>
+                <!-- Start Main Shop Trending -->
+                <div class="row mb-5">
+                    <div
+                        class="box show pe-3 ps-3 col-lg-3 col-md-6 mb-4 col-12 adv"
+                    >
+                        <div class="content overflow-hidden">
+                            <div
+                                class="image position-relative mb-3 overflow-hidden"
+                            >
+                                <a href="./product-details.html">
+                                    <img
+                                        src="./assets/images/trending-01.jpg"
+                                        alt="trending"
+                                    />
+                                    <div class="prise position-absolute p-2">
+                                        <p
+                                            class="text-decoration-line-through fs-6 m-0 text-white"
+                                        >
+                                            $28
+                                        </p>
+                                        <p class="fw-bold fs-6 m-0 text-white">
+                                            $20
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div
+                                class="info d-flex justify-content-between align-items-center p-3"
+                            >
+                                <div class="text">
+                                    <p class="text-black-50 m-0">Action</p>
+                                    <p class="m-0 card-name">Assasin Creed</p>
+                                </div>
+                                <a
+                                    class="rounded-circle d-flex align-items-center justify-content-center"
+                                    href="./product-details.html"
+                                >
+                                    <i
+                                        class="fa-solid fa-shopping-bag fs-4 text-white"
+                                    ></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="box show pe-3 ps-3 col-lg-3 col-md-6 mb-4 col-12 str"
+                    >
+                        <div class="content overflow-hidden">
+                            <div
+                                class="image position-relative mb-3 overflow-hidden"
+                            >
+                                <a href="./product-details.html">
+                                    <img
+                                        src="./assets/images/trending-02.jpg"
+                                        alt="trending"
+                                    />
+                                    <div class="prise position-absolute p-2">
+                                        <p
+                                            class="text-decoration-line-through fs-6 m-0 text-white"
+                                        >
+                                            $28
+                                        </p>
+                                        <p class="fw-bold fs-6 m-0 text-white">
+                                            $20
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div
+                                class="info d-flex justify-content-between align-items-center p-3"
+                            >
+                                <div class="text">
+                                    <p class="text-black-50 m-0">Action</p>
+                                    <p class="m-0 card-name">Assasin Creed</p>
+                                </div>
+                                <a
+                                    class="rounded-circle d-flex align-items-center justify-content-center"
+                                    href="./product-details.html"
+                                >
+                                    <i
+                                        class="fa-solid fa-shopping-bag fs-4 text-white"
+                                    ></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="box show pe-3 ps-3 col-lg-3 col-md-6 mb-4 col-12 rac"
+                    >
+                        <div class="content overflow-hidden">
+                            <div
+                                class="image position-relative mb-3 overflow-hidden"
+                            >
+                                <a href="./product-details.html">
+                                    <img
+                                        src="./assets/images/trending-03.jpg"
+                                        alt="trending"
+                                    />
+                                    <div class="prise position-absolute p-2">
+                                        <p
+                                            class="text-decoration-line-through fs-6 m-0 text-white"
+                                        >
+                                            $28
+                                        </p>
+                                        <p class="fw-bold fs-6 m-0 text-white">
+                                            $20
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div
+                                class="info d-flex justify-content-between align-items-center p-3"
+                            >
+                                <div class="text">
+                                    <p class="text-black-50 m-0">Action</p>
+                                    <p class="m-0 card-name">Assasin Creed</p>
+                                </div>
+                                <a
+                                    class="rounded-circle d-flex align-items-center justify-content-center"
+                                    href="./product-details.html"
+                                >
+                                    <i
+                                        class="fa-solid fa-shopping-bag fs-4 text-white"
+                                    ></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="box show pe-3 ps-3 col-lg-3 col-md-6 mb-4 col-12 adv"
+                    >
+                        <div class="content overflow-hidden">
+                            <div
+                                class="image position-relative mb-3 overflow-hidden"
+                            >
+                                <a href="./product-details.html">
+                                    <img
+                                        src="./assets/images/trending-04.jpg"
+                                        alt="trending"
+                                    />
+                                    <div class="prise position-absolute p-2">
+                                        <p
+                                            class="text-decoration-line-through fs-6 m-0 text-white"
+                                        >
+                                            $28
+                                        </p>
+                                        <p class="fw-bold fs-6 m-0 text-white">
+                                            $20
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div
+                                class="info d-flex justify-content-between align-items-center p-3"
+                            >
+                                <div class="text">
+                                    <p class="text-black-50 m-0">Action</p>
+                                    <p class="m-0 card-name">Assasin Creed</p>
+                                </div>
+                                <a
+                                    class="rounded-circle d-flex align-items-center justify-content-center"
+                                    href="./product-details.html"
+                                >
+                                    <i
+                                        class="fa-solid fa-shopping-bag fs-4 text-white"
+                                    ></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="box show pe-3 ps-3 col-lg-3 col-md-6 mb-4 col-12 str"
+                    >
+                        <div class="content overflow-hidden">
+                            <div
+                                class="image position-relative mb-3 overflow-hidden"
+                            >
+                                <a href="./product-details.html">
+                                    <img
+                                        src="./assets/images/trending-04.jpg"
+                                        alt="trending"
+                                    />
+                                    <div class="prise position-absolute p-2">
+                                        <p
+                                            class="text-decoration-line-through fs-6 m-0 text-white"
+                                        >
+                                            $28
+                                        </p>
+                                        <p class="fw-bold fs-6 m-0 text-white">
+                                            $20
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div
+                                class="info d-flex justify-content-between align-items-center p-3"
+                            >
+                                <div class="text">
+                                    <p class="text-black-50 m-0">Action</p>
+                                    <p class="m-0 card-name">Assasin Creed</p>
+                                </div>
+                                <a
+                                    class="rounded-circle d-flex align-items-center justify-content-center"
+                                    href="./product-details.html"
+                                >
+                                    <i
+                                        class="fa-solid fa-shopping-bag fs-4 text-white"
+                                    ></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="box show pe-3 ps-3 col-lg-3 col-md-6 mb-4 col-12 rac"
+                    >
+                        <div class="content overflow-hidden">
+                            <div
+                                class="image position-relative mb-3 overflow-hidden"
+                            >
+                                <a href="./product-details.html">
+                                    <img
+                                        src="./assets/images/trending-01.jpg"
+                                        alt="trending"
+                                    />
+                                    <div class="prise position-absolute p-2">
+                                        <p
+                                            class="text-decoration-line-through fs-6 m-0 text-white"
+                                        >
+                                            $28
+                                        </p>
+                                        <p class="fw-bold fs-6 m-0 text-white">
+                                            $20
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div
+                                class="info d-flex justify-content-between align-items-center p-3"
+                            >
+                                <div class="text">
+                                    <p class="text-black-50 m-0">Action</p>
+                                    <p class="m-0 card-name">Assasin Creed</p>
+                                </div>
+                                <a
+                                    class="rounded-circle d-flex align-items-center justify-content-center"
+                                    href="./product-details.html"
+                                >
+                                    <i
+                                        class="fa-solid fa-shopping-bag fs-4 text-white"
+                                    ></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="box show pe-3 ps-3 col-lg-3 col-md-6 mb-4 col-12 adv"
+                    >
+                        <div class="content overflow-hidden">
+                            <div
+                                class="image position-relative mb-3 overflow-hidden"
+                            >
+                                <a href="./product-details.html">
+                                    <img
+                                        src="./assets/images/trending-03.jpg"
+                                        alt="trending"
+                                    />
+                                    <div class="prise position-absolute p-2">
+                                        <p
+                                            class="text-decoration-line-through fs-6 m-0 text-white"
+                                        >
+                                            $28
+                                        </p>
+                                        <p class="fw-bold fs-6 m-0 text-white">
+                                            $20
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div
+                                class="info d-flex justify-content-between align-items-center p-3"
+                            >
+                                <div class="text">
+                                    <p class="text-black-50 m-0">Action</p>
+                                    <p class="m-0 card-name">Assasin Creed</p>
+                                </div>
+                                <a
+                                    class="rounded-circle d-flex align-items-center justify-content-center"
+                                    href="./product-details.html"
+                                >
+                                    <i
+                                        class="fa-solid fa-shopping-bag fs-4 text-white"
+                                    ></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="box show pe-3 ps-3 col-lg-3 col-md-6 mb-4 col-12 str"
+                    >
+                        <div class="content overflow-hidden">
+                            <div
+                                class="image position-relative mb-3 overflow-hidden"
+                            >
+                                <a href="./product-details.html">
+                                    <img
+                                        src="./assets/images/trending-02.jpg"
+                                        alt="trending"
+                                    />
+                                    <div class="prise position-absolute p-3">
+                                        <p
+                                            class="text-decoration-line-through fs-6 m-0 text-white"
+                                        >
+                                            $28
+                                        </p>
+                                        <p class="fw-bold fs-6 m-0 text-white">
+                                            $20
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div
+                                class="info d-flex justify-content-between align-items-center p-3"
+                            >
+                                <div class="text">
+                                    <p class="text-black-50 m-0">Action</p>
+                                    <p class="m-0 card-name">Assasin Creed</p>
+                                </div>
+                                <a
+                                    class="rounded-circle d-flex align-items-center justify-content-center"
+                                    href="./product-details.html"
+                                >
+                                    <i
+                                        class="fa-solid fa-shopping-bag fs-4 text-white"
+                                    ></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="box show pe-3 ps-3 col-lg-3 col-md-6 mb-4 col-12 rac"
+                    >
+                        <div class="content overflow-hidden">
+                            <div
+                                class="image position-relative mb-3 overflow-hidden"
+                            >
+                                <a href="./product-details.html">
+                                    <img
+                                        src="./assets/images/trending-01.jpg"
+                                        alt="trending"
+                                    />
+                                    <div class="prise position-absolute p-2">
+                                        <p
+                                            class="text-decoration-line-through fs-6 m-0 text-white"
+                                        >
+                                            $28
+                                        </p>
+                                        <p class="fw-bold fs-6 m-0 text-white">
+                                            $20
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div
+                                class="info d-flex justify-content-between align-items-center p-3"
+                            >
+                                <div class="text">
+                                    <p class="text-black-50 m-0">Action</p>
+                                    <p class="m-0 card-name">Assasin Creed</p>
+                                </div>
+                                <a
+                                    class="rounded-circle d-flex align-items-center justify-content-center"
+                                    href="./product-details.html"
+                                >
+                                    <i
+                                        class="fa-solid fa-shopping-bag fs-4 text-white"
+                                    ></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="box show pe-3 ps-3 col-lg-3 col-md-6 mb-4 col-12 adv"
+                    >
+                        <div class="content overflow-hidden">
+                            <div
+                                class="image position-relative mb-3 overflow-hidden"
+                            >
+                                <a href="./product-details.html">
+                                    <img
+                                        src="./assets/images/trending-04.jpg"
+                                        alt="trending"
+                                    />
+                                    <div class="prise position-absolute p-2">
+                                        <p
+                                            class="text-decoration-line-through fs-6 m-0 text-white"
+                                        >
+                                            $28
+                                        </p>
+                                        <p class="fw-bold fs-6 m-0 text-white">
+                                            $20
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div
+                                class="info d-flex justify-content-between align-items-center p-3"
+                            >
+                                <div class="text">
+                                    <p class="text-black-50 m-0">Action</p>
+                                    <p class="m-0 card-name">Assasin Creed</p>
+                                </div>
+                                <a
+                                    class="rounded-circle d-flex align-items-center justify-content-center"
+                                    href="./product-details.html"
+                                >
+                                    <i
+                                        class="fa-solid fa-shopping-bag fs-4 text-white"
+                                    ></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="box show pe-3 ps-3 col-lg-3 col-md-6 mb-4 col-12 str"
+                    >
+                        <div class="content overflow-hidden">
+                            <div
+                                class="image position-relative mb-3 overflow-hidden"
+                            >
+                                <a href="./product-details.html">
+                                    <img
+                                        src="./assets/images/trending-02.jpg"
+                                        alt="trending"
+                                    />
+                                    <div class="prise position-absolute p-2">
+                                        <p
+                                            class="text-decoration-line-through fs-6 m-0 text-white"
+                                        >
+                                            $28
+                                        </p>
+                                        <p class="fw-bold fs-6 m-0 text-white">
+                                            $20
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div
+                                class="info d-flex justify-content-between align-items-center p-3"
+                            >
+                                <div class="text">
+                                    <p class="text-black-50 m-0">Action</p>
+                                    <p class="m-0 card-name">Assasin Creed</p>
+                                </div>
+                                <a
+                                    class="rounded-circle d-flex align-items-center justify-content-center"
+                                    href="./product-details.html"
+                                >
+                                    <i
+                                        class="fa-solid fa-shopping-bag fs-4 text-white"
+                                    ></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="box show pe-3 ps-3 col-lg-3 col-md-6 mb-4 col-12 rac"
+                    >
+                        <div class="content overflow-hidden">
+                            <div
+                                class="image position-relative mb-3 overflow-hidden"
+                            >
+                                <a href="./product-details.html">
+                                    <img
+                                        src="./assets/images/trending-04.jpg"
+                                        alt="trending"
+                                    />
+                                    <div class="prise position-absolute p-2">
+                                        <p
+                                            class="text-decoration-line-through fs-6 m-0 text-white"
+                                        >
+                                            $28
+                                        </p>
+                                        <p class="fw-bold fs-6 m-0 text-white">
+                                            $20
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div
+                                class="info d-flex justify-content-between align-items-center p-3"
+                            >
+                                <div class="text">
+                                    <p class="text-black-50 m-0">Action</p>
+                                    <p class="m-0 card-name">Assasin Creed</p>
+                                </div>
+                                <a
+                                    class="rounded-circle d-flex align-items-center justify-content-center"
+                                    href="./product-details.html"
+                                >
+                                    <i
+                                        class="fa-solid fa-shopping-bag fs-4 text-white"
+                                    ></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Main Shop Trending -->
+                <ul class="scroll-rl p-0 d-flex justify-content-center">
+                    <li class="me-3 rounded-circle text-center"><</li>
+                    <li class="me-3 rounded-circle text-center">1</li>
+                    <li class="me-3 rounded-circle active text-center">2</li>
+                    <li class="me-3 rounded-circle text-center">3</li>
+                    <li class="rounded-circle text-center">></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Start Footer -->
+        <footer class="mt-5">
+            <div class="container">
+                <p class="text-center text-white m-0">
+                    Copyright © 2048 LUGX Gaming Company. All rights reserved.
+                    <span class="ps-3">Design: TemplateMo</span>
+                </p>
+            </div>
+        </footer>
+        <!-- End Footer -->
+        <!-- Script Font Awesome Library -->
+        <script src="./vendor/icons/JS/all.min.js"></script>
+        <!-- Script Bootstrap Framework -->
+        <script src="./vendor/bootstrap/JS/bootstrap.bundle.min.js"></script>
+        <!-- Script Main Template -->
+        <script src="./assets/js/main.js"></script>
+    </body>
+</html>

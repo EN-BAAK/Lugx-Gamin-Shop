@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+ul, ol {
+    margin: 0;
+    list-style: none;
+}
+input {
+    border: none;
+    outline: none;
+    &::placeholder {
+        @include prefixer(transition, .3s);
+}
+&:focus::placeholder {
+    @include opacity(0);
+}
+}

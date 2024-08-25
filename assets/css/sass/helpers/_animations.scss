@@ -1,0 +1,65 @@
+@include keyf(show) {
+    from {
+        @include opacity(0);
+    }
+    to {
+        @include opacity(1);
+    }
+}
+@include keyf(headChangingT) {
+    from {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        background-color: #0070f800;
+    }
+    to {
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        background-color: var(--c-blue-main);
+    }
+}
+@include keyf(headChangingB) {
+    from {
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        background-color: var(--c-blue-main);
+    }
+    to {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        background-color: #0070f800;
+    }
+}
+@include keyf(show-slide) {
+    from {
+        opacity: 0;
+        @include prefixer(transform, scale(0))
+    }
+    to {
+        opacity: 1;
+        @include prefixer(transform, scale(1))
+    }
+}
+@include keyf(hide-slide) {
+    0% {
+        opacity: 1;
+        @include prefixer(transform, scale(1))
+    }
+    99% {
+        opacity: 0;
+        @include prefixer(transform, scale(0))
+    }
+    100% {
+        display: none;
+    }
+}
+@include keyf(dots) {
+    50% {
+        @include prefixer(transform, translateX(-31px));
+    }
+}
+@include keyf(dot) {
+    50% {
+        @include prefixer(transform, translateX(96px));
+    }
+}

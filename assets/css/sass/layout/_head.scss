@@ -1,0 +1,127 @@
+header {
+    @include animation(headChangingB, 0.3s forwards linear);
+    z-index: 999;
+    .container {
+        .logo {
+            img {
+                width: 120px;
+            }
+        }
+        nav {
+            ul {
+                display: none;
+                li {
+                    @include prefixer(transition, 0.3s);
+                    &:hover,
+                    &.active {
+                        a {
+                            background-color: var(--c-white-hover);
+                        }
+                    }
+                    @include breakpoints(md) {
+                        @include prefixer(border-radius, 50rem);
+                    }
+                    a {
+                        text-wrap: nowrap;
+                        color: var(--c-white-main);
+                    }
+                }
+                button {
+                    background-color: var(--c-red-main);
+                    border: none;
+                    @include breakpoints(md) {
+                        @include prefixer(border-radius, 50rem);
+                    }
+                    text-wrap: nowrap;
+                }
+                @include breakpoints(md) {
+                    display: flex;
+                }
+                &.active {
+                    background-color: var(--c-white-main);
+                    width: calc(100% - 50px);
+                    border-bottom-left-radius: 40px;
+                    border-bottom-right-radius: 40px;
+                    display: flex;
+                    flex-direction: column;
+                    position: absolute;
+                    @include center-x;
+                    bottom: -220px;
+                    text-align: center;
+                    li {
+                        padding: 10px 0;
+                        border-top: 1px solid #ddd;
+                        a {
+                            color: black;
+                        }
+                        &.active {
+                            a {
+                                color: var(--c-red-main);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .triggle-bar {
+            width: 40px;
+            height: 40px;
+            padding: 5px 0 5px 5px;
+            position: relative;
+            &::after {
+                content: "";
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                @include center-x;
+                top: -4px;
+            }
+            cursor: pointer;
+            .bar {
+                background-color: white;
+                height: 3px;
+                @include prefixer(transition, var(--time-transition));
+                &.bar-top {
+                    width: 25px;
+                    margin-bottom: 6px;
+                }
+                &.bar-mid {
+                    width: 30px;
+                    margin-bottom: 6px;
+                }
+                &.bar-bottom {
+                    width: 25px;
+                }
+            }
+            &.active {
+                .bar {
+                    &.bar-top {
+                        @include prefixer(
+                            transform,
+                            translateY(9px) rotateZ(45deg)
+                        );
+                    }
+                    &.bar-mid {
+                        opacity: 0;
+                    }
+                    &.bar-bottom {
+                        @include prefixer(
+                            transform,
+                            translateY(-9px) rotateZ(-45deg)
+                        );
+                    }
+                }
+            }
+            @include breakpoints(md) {
+                display: none;
+            }
+        }
+        @include breakpoints("(max-width: 767.9px)") {
+            max-width: 700px;
+            padding: 20px 15px;
+        }
+    }
+    &[scrolled="true"] {
+        @include animation(headChangingT, 0.3s forwards linear);
+    }
+}

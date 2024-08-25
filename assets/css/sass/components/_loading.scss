@@ -1,0 +1,56 @@
+.js-preloader {
+    background-color: rgba(0, 0, 0, 0.99);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: opacity 0.25s ease;
+    transition: opacity 0.25s ease;
+    -moz-transition: opacity 0.25s ease;
+    -ms-transition: opacity 0.25s ease;
+    -o-transition: opacity 0.25s ease;
+    z-index: 9999;
+    &.loaded {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+    .preloader-inner {
+        background-color: transparent;
+        width: 142px;
+        height: 40px;
+        position: relative;
+        .dot {
+            background: #0071f8;
+            width: 16px;
+            height: 16px;
+            @include prefixer(border-radius, 50%);
+            @include prefixer(transform, translateX(0));
+            position: absolute;
+            top: 12px;
+            left: 15px;
+            @include animation(dot, 2.8s infinite);
+        }
+        .dots {
+            margin-top: 12px;
+            margin-left: 31px;
+            @include prefixer(transform, translateX(0));
+            @include animation(dots, 2.8s infinite);
+            span {
+                background: #0071f8;
+                width: 16px;
+                height: 16px;
+                margin-left: 16px;
+                border-radius: 50%;
+                display: block;
+                float: left;
+            }
+        }
+    }
+}

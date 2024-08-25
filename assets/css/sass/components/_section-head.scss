@@ -1,0 +1,17 @@
+.row {
+    .com-head-title {
+        p {
+            color: var(--c-red-main);
+        }
+    }
+    .com-head {
+        button {
+            background-color: var(--c-red-main);
+            display: inline-block;
+            @include prefixer(transition,var(--time-transition));
+            &:hover {
+                background-color: var(--c-blue-main);
+            }
+        }
+    }
+}

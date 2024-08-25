@@ -1,0 +1,11 @@
+footer {
+    background-image: url('../images/footer-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 40px;
+    padding-bottom: 75px;
+    @include breakpoints(sm) {
+        border-top-left-radius: 150px;
+        border-top-right-radius: 150px;
+    }
+}
